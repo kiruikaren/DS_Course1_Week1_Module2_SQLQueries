@@ -16,7 +16,7 @@ pd.read_sql("""SELECT * FROM planets; """, conn1)
 df_no_moons = pd.read_sql("""SELECT * FROM planets WHERE num_of_moons == 0; """, conn1)
 # CodeGrade step2
 # Replace None with your code
-df_name_seven = pd.read_sql("""SELECT * FROM planets WHERE LENGTH(name) = 7; """, conn1)
+df_name_seven = pd.read_sql("""SELECT name, mass FROM planets WHERE LENGTH(name) = 7; """, conn1)
 df_name_seven
 # CodeGrade step3
 # Replace None with your code
